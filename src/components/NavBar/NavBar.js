@@ -1,23 +1,22 @@
 import CartWidget from "../CartWidget/CartWidget"
-import iconn from './img/icon.jpg';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import './style.css';
 
 function NavBar() {
   return (
     <>
-    <nav>
+    <nav className="NavBar">
       
-      <div>
-        <img src={iconn} width="30" height="30" alt="Logo"/>
-        <h2>Genero</h2>
+      <div className="NavBarIcon">
+        <img src="./img/icon.jpg" alt="Logo"/>
+        <span>SINCE 1937</span>
       </div>
 
-      <div>
+      <div className="NavBarList">
+          <h2>GENERO</h2>
           <ul>
-            <li>Mujer</li>
-            <li>Hombre</li>
-            <li>Unisex</li>
+            <li><a href="*">Mujer</a> </li>
+            <li><a href="*">Hombre</a> </li>
+            <li><a href="*">Unisex</a> </li>            
           </ul>
       </div>  
 
