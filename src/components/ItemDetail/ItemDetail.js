@@ -9,6 +9,8 @@ const ItemDetail = ({detail}) => {
 
         <div className="ItemDetailkart">
           <h2>{detail.nombre}</h2>
+          <h3 style={{ textTransform: 'uppercase' }}>Color: {detail.color}</h3>
+
           <ItemCount/>
         </div>
        
