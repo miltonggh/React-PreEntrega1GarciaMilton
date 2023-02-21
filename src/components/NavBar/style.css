@@ -1,6 +1,7 @@
 * {
     color: #1f1f24;
     font-family:'Times New Roman', Times, serif;
+
 }
 
 .NavBar {
@@ -46,9 +47,17 @@
 
 .NavBarList ul li {
     margin: 5px 30px;
+    font-weight: 800;
+    font-size: 1.2rem;
+
 }
 
-.NavBarList ul li a {
+.inactive {
     text-decoration: none;
     color: #1f1f24;
+}
+
+.active {
+    color: hsl(240, 2%, 48%);
+
 }

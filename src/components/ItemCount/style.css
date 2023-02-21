@@ -1,0 +1,28 @@
+.ItemCount {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+
+    background-color: #1f1f2467;
+    border-radius: 50px;
+}
+
+.ControlItemCount {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ControlItemCount h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    width: 20px;
+    text-align: center;
+}
+
+button {
+    all: unset;
+}
