@@ -1,10 +1,8 @@
-import { useState, useEffect } from "react"
 import './style.css';
 
 const stock = 10
 
-const ItemCount = () => {
-    const [itemCount, setItemCount] = useState (0);
+const ItemCount = ({itemCount, setItemCount}) => {
   
 
 
@@ -21,12 +19,15 @@ const ItemCount = () => {
     <div className="ItemCount">
         <div className="ControlItemCount">
             <button onClick={addCounter}>+</button>
-            <h2>{itemCount}</h2>
+            <div>
+               <span>{itemCount}</span> 
+            </div>
             <button onClick={subtractCounter}>-</button>
         </div>
         <div className="AddCartItemCount">
             <button>Agregar al carrito</button>
         </div>
+
     </div>
   )
 
