@@ -1,3 +1,10 @@
+![](./rec-screen-_1_.gif){width='100px'}
+
+# ProyectoGarciaMilton
+
+# Librería utilizada
+    Bootstrap
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
