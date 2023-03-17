@@ -1,14 +1,10 @@
 import './style.css';
 
-const stock = 10
-
 const ItemCount = ({itemCount, setItemCount}) => {
   
 
-
-
     const addCounter = () => {
-        setItemCount(stock === itemCount ? itemCount : itemCount + 1)
+        setItemCount(itemCount + 1)
     }
 
     const subtractCounter = () => {
@@ -18,16 +14,12 @@ const ItemCount = ({itemCount, setItemCount}) => {
     return (
     <div className="ItemCount">
         <div className="ControlItemCount">
-            <button onClick={addCounter}>+</button>
+            <button disabled ={itemCount === 0} onClick={addCounter}>+</button>
             <div>
                <span>{itemCount}</span> 
             </div>
-            <button onClick={subtractCounter}>-</button>
+            <button disabled ={itemCount === 1} onClick={subtractCounter}>-</button>
         </div>
-        <div className="AddCartItemCount">
-            <button>Agregar al carrito</button>
-        </div>
-
     </div>
   )
 

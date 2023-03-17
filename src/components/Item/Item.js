@@ -3,7 +3,7 @@ import './style.css';
 const Item = ({product}) => {
   return (
     <div className='Item'>
-        <img alt={product.nombre} src={product.img}></img>
+        <img alt={product.nombre} src={`/img/${product.img}`}></img>
 
         <div className='ItemName'>
           <h2>{product.nombre}</h2>

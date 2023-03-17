@@ -9,13 +9,12 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({detail}) => {
   const navigate = useNavigate();
-  const {addItem} = useContext(CartContext);
-  const [itemCount, setItemCount] = useState (1);
-
+  const {addItem, cart} = useContext(CartContext);
+  const [itemCount, setItemCount] = useState (detail?.stock === 0 ? 0 : 1);
 
   return (
     <div className="ItemDetail">
-        <img alt={detail.nombre} src= {detail.img}></img>
+        <img alt={detail.nombre} src= {`/img/${detail.img}`}></img>
 
         <div className="ItemDetailkart">
           <h2>{detail.nombre}</h2>
@@ -25,7 +24,7 @@ const ItemDetail = ({detail}) => {
 
 
           <Button onClick={() => navigate('/')}>Seguir Comprando</Button>
-          <Button disable={itemCount > detail.stock} onClick={() => addItem(detail, itemCount)}>Agregar al carrito</Button>
+          <Button disabled={itemCount > detail.stock} onClick={() => addItem(detail, itemCount)}>Agregar al carrito</Button>
           <Button onClick={() => navigate('/cart')}>Ir al Carrito</Button>
 
         </div>
